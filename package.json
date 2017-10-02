@@ -1,0 +1,23 @@
+{
+  "name": "bigrams",
+  "version": "0.0.1",
+  "description": "histogram of the bigrams",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register specs/nGrams.spec.js",
+    "lint": "eslint src/*.js",
+    "build": "babel src -d dist",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "byline": "^5.0.0",
+    "chai": "^1.9.2",
+    "mocha": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.7.7",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.7.2"
+  }
+}
